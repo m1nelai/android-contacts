@@ -14,7 +14,7 @@ import java.util.Objects;
 import ru.yandex.practicum.contacts.R;
 import ru.yandex.practicum.contacts.presentation.base.BaseBottomSheetDialogFragment;
 import ru.yandex.practicum.contacts.presentation.sort.model.SortType;
-
+//11
 public class SortDialogFragment extends BaseBottomSheetDialogFragment<SortViewModel> {
 
     public static final String REQUEST_KEY = "REQUEST_KEY_SORT";

@@ -29,7 +29,7 @@ import ru.yandex.practicum.contacts.presentation.main.model.MenuClick;
 import ru.yandex.practicum.contacts.presentation.sort.model.SortType;
 import ru.yandex.practicum.contacts.utils.java.ThreadUtils;
 import ru.yandex.practicum.contacts.utils.model.MergedContactUtils;
-
+//11
 public class MainViewModel extends AndroidViewModel {
 
     private final ContactSourceRepository contactSourceRepository;

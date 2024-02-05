@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 import ru.yandex.practicum.contacts.presentation.base.BaseBottomSheetViewModel;
 import ru.yandex.practicum.contacts.presentation.sort.model.SortType;
-
+//11
 public class SortViewModel extends BaseBottomSheetViewModel {
 
     private final UiState uiState = new UiState();
