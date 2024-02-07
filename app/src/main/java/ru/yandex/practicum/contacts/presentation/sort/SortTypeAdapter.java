@@ -17,13 +17,14 @@ import java.util.function.Consumer;
 
 import ru.yandex.practicum.contacts.R;
 import ru.yandex.practicum.contacts.databinding.ItemSortBinding;
+import ru.yandex.practicum.contacts.presentation.base.BaseListDiffCallback;
 import ru.yandex.practicum.contacts.presentation.sort.model.SortType;
 
 public class SortTypeAdapter extends RecyclerView.Adapter<SortTypeAdapter.ViewHolder> {
 
     private final AsyncListDiffer<SortTypeUI> differ = new AsyncListDiffer<>(
             new AdapterListUpdateCallback(this),
-            new AsyncDifferConfig.Builder<>(new ListDiffCallback()).build()
+            new AsyncDifferConfig.Builder<>(new BaseListDiffCallback<SortTypeUI>()).build()
     );
 
     private final Consumer<SortTypeUI> clickListener;
@@ -65,7 +66,7 @@ public class SortTypeAdapter extends RecyclerView.Adapter<SortTypeAdapter.ViewHo
             this.binding = binding;
             this.binding.getRoot().setOnClickListener(v -> clickListener.accept(data));
         }
-
+        //11
         public void bind(SortTypeUI data) {
             this.data = data;
             final int sortResId = resource(data.getSortType());
@@ -84,27 +85,8 @@ public class SortTypeAdapter extends RecyclerView.Adapter<SortTypeAdapter.ViewHo
                 case BY_SURNAME_REVERSED:
                     return R.string.sort_by_surname_reversed;
                 default:
-                    throw new IllegalArgumentException("Not supported SortType");
+                    throw new IllegalArgumentException("Not suported SortType");
             }
-        }
-    }
-
-    static class ListDiffCallback extends DiffUtil.ItemCallback<SortTypeUI> {
-
-        @Override
-        public boolean areItemsTheSame(@NonNull SortTypeUI oldItem, @NonNull SortTypeUI newItem) {
-            return oldItem.getSortType() == newItem.getSortType();
-        }
-
-        @Override
-        public boolean areContentsTheSame(@NonNull SortTypeUI oldItem, @NonNull SortTypeUI newItem) {
-            return oldItem.equals(newItem);
-        }
-
-        @Nullable
-        @Override
-        public Object getChangePayload(@NonNull SortTypeUI oldItem, @NonNull SortTypeUI newItem) {
-            return newItem;
         }
     }
 }

@@ -1,5 +1,5 @@
 package ru.yandex.practicum.contacts.presentation.base;
-
+//11
 import androidx.lifecycle.ViewModel;
 
 public abstract class BaseBottomSheetViewModel extends ViewModel {

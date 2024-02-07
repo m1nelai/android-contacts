@@ -31,7 +31,7 @@ import ru.yandex.practicum.contacts.presentation.main.model.MenuClick;
 import ru.yandex.practicum.contacts.presentation.sort.model.SortType;
 import ru.yandex.practicum.contacts.ui.widget.DividerItemDecoration;
 import ru.yandex.practicum.contacts.utils.widget.EditTextUtils;
-
+//11
 @SuppressLint("UnsafeExperimentalUsageError")
 public class MainActivity extends AppCompatActivity {
 

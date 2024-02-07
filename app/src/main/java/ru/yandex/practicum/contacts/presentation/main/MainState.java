@@ -11,7 +11,7 @@ import java.util.Set;
 import ru.yandex.practicum.contacts.model.ContactType;
 import ru.yandex.practicum.contacts.model.MergedContact;
 import ru.yandex.practicum.contacts.presentation.sort.model.SortType;
-
+//11
 public class MainState {
 
     private final SortType defaultSortType = SortType.BY_NAME;

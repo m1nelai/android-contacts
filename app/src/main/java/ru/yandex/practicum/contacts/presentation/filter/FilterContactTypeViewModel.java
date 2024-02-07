@@ -16,7 +16,7 @@ import ru.yandex.practicum.contacts.presentation.filter.model.FilterContactType;
 import ru.yandex.practicum.contacts.presentation.filter.model.FilterContactTypeUi;
 import ru.yandex.practicum.contacts.utils.model.ContactTypeUtils;
 import ru.yandex.practicum.contacts.utils.model.FilterContactTypeUtils;
-
+//11
 public class FilterContactTypeViewModel extends BaseBottomSheetViewModel {
 
     private final UiState uiState = new UiState();
